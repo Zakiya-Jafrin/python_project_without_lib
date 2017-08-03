@@ -3,6 +3,7 @@ from sympy import sin                # import trigonometric function from the sy
 from sympy.abc import x
 import math                          # import math library for using constants
 
+
 # Class to find the alpha
 class AlphaFind:
 
@@ -20,14 +21,14 @@ class AlphaFind:
         pi = self.picalculate(1, 500)
         # numericall calculating alpha by using the 'nsolve' function of sympy library
         self.alpha = nsolve(-sin(x) + x - pi/2, 0)
-        #print pi
+        # print pi
         # returns the value of alpha
         return self.alpha
 
     # method to print the data calculated in 'alphacalulate' method
     def displayalpha(self):
         print "The value of alpha is: " + str(self.alpha)
-        # print self.alpha
+        # print b
 
 alphafind = AlphaFind()               # creating object of the class AlphaFind
 alphafind.alphacalculate()            # calling the 'alphacalculate' method
