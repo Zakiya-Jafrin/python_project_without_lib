@@ -1,3 +1,4 @@
+#august2017
 # calculate the angle with vertex at the center of the left circle
 class Findalpha:
 
